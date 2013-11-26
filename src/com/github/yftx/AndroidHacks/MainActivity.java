@@ -13,6 +13,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.*;
 import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -25,7 +26,25 @@ public class MainActivity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        initAnimation();
         setListAdapter(getSampleAdapter());
+    }
+
+    private void initAnimation() {
+        AnimationSet set = new AnimationSet(true);
+        Animation animation = new AlphaAnimation(0.0f, 1.0f);
+        animation.setDuration(100);
+        set.addAnimation(animation);
+        animation = new TranslateAnimation(
+                Animation.RELATIVE_TO_SELF, -1.0f,
+                Animation.RELATIVE_TO_SELF, 0.0f,
+                Animation.RELATIVE_TO_SELF, 0.0f,
+                Animation.RELATIVE_TO_SELF, 0.0f);
+        animation.setDuration(500);
+        set.addAnimation(animation);
+        //每个子view显示的间隔1.0表示子view按顺序依次显示，每次只显示一个动画，一个动画显示完再显示另外一个
+        LayoutAnimationController controller = new LayoutAnimationController(set, 1.0f);
+        getListView().setLayoutAnimation(controller);
     }
 
 
