@@ -25,5 +25,8 @@
         <activity android:name=".sectionAnimation.TextAndImageAnimation"
                 android:label="TextView以及ImageView切换动画"
                 />
+        <activity
+                android:name=".sectionLayout.CanvasActivity"
+                android:label="Canvas示例"/>
     </application>
 </manifest>

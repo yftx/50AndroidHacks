@@ -43,7 +43,7 @@ public class MainActivity extends ListActivity {
         animation.setDuration(500);
         set.addAnimation(animation);
         //每个子view显示的间隔1.0表示子view按顺序依次显示，每次只显示一个动画，一个动画显示完再显示另外一个
-        LayoutAnimationController controller = new LayoutAnimationController(set, 1.0f);
+        LayoutAnimationController controller = new LayoutAnimationController(set, 0.2f);
         getListView().setLayoutAnimation(controller);
     }
 
