@@ -19,5 +19,8 @@
         <activity android:name=".sectionLayout.WeightActivity"
                 android:label="Weight property"
                 />
+        <activity
+                android:name=".sectionLayout.customview.CustomCard"
+                android:label="自定义View card"/>
     </application>
 </manifest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.github.yftx.AndroidHacks.sectionLayout.customview.Cascade
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cascade="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <View
+            android:id="@+id/one"
+            cascade:custom_name="one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            />
+    <View
+            cascade:margin_space="20dp"
+            cascade:custom_name="two"
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            />
+    <View
+            cascade:custom_name="three"
+            cascade:margin_space="20dp"
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            />
+</com.github.yftx.AndroidHacks.sectionLayout.customview.Cascade>
