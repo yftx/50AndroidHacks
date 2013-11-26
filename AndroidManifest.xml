@@ -22,5 +22,8 @@
         <activity
                 android:name=".sectionLayout.customview.CustomCard"
                 android:label="自定义View card"/>
+        <activity android:name=".sectionAnimation.TextAndImageAnimation"
+                android:label="TextView以及ImageView切换动画"
+                />
     </application>
 </manifest>
