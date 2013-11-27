@@ -31,5 +31,8 @@
         <activity
                 android:name=".sectionAnimation.KenBurnsEffect"
                 android:label="KenBurnsEffect"/>
+        <activity
+                android:name=".sectionTipsAndTricks.FormatTextView"
+                android:label="FormatTextView"/>
     </application>
 </manifest>
