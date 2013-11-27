@@ -7,6 +7,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import com.github.yftx.AndroidHacks.R;
@@ -21,6 +22,7 @@ import java.util.Date;
 public class GlowTextView extends Activity {
     private static final String DATE_FORMAT = "%02d:%02d:%02d";
     private static final int REFRESH_DELAY = 500;
+    private static final String TAG = GlowTextView.class.getSimpleName() ;
 
     private final Handler mHandler = new Handler();
     private final Runnable mTimeRefresher = new Runnable() {
@@ -39,6 +41,13 @@ public class GlowTextView extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.glow_text);
         mTextView = (TextView) findViewById(R.id.main_clock_time);
+        Log.d(TAG,"out of post tv width " + mTextView.getWidth() + " height " + mTextView.getHeight());
+        mTextView.post(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(TAG,"in post tv width " + mTextView.getWidth() + " height " + mTextView.getHeight());
+            }
+        });
     }
 
     public void onClickStartClock(View view) {
