@@ -7,6 +7,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.TextView;
 import com.github.yftx.AndroidHacks.R;
 
@@ -37,13 +38,10 @@ public class GlowTextView extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.glow_text);
-
         mTextView = (TextView) findViewById(R.id.main_clock_time);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
+    public void onClickStartClock(View view) {
         mHandler.post(mTimeRefresher);
     }
 
