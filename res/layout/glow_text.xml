@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.github.yftx.AndroidHacks.sectionTipsAndTricks.LEDTextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="88:88:88"
+            android:textSize="80sp"
+            android:textColor="#3300FF00"
+            />
+
+    <com.github.yftx.AndroidHacks.sectionTipsAndTricks.LEDTextView
+            android:id="@+id/main_clock_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="08:43:02"
+            android:textSize="80sp"
+            android:textColor="#00FF00"
+            android:shadowColor="#00FF00"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            />
+</RelativeLayout>

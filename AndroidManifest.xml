@@ -34,5 +34,8 @@
         <activity
                 android:name=".sectionTipsAndTricks.FormatTextView"
                 android:label="FormatTextView"/>
+        <activity
+                android:name=".sectionTipsAndTricks.GlowTextView"
+                android:label="GlowTextView"/>
     </application>
 </manifest>
