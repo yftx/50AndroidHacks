@@ -28,5 +28,8 @@
         <activity
                 android:name=".sectionLayout.CanvasActivity"
                 android:label="Canvas示例"/>
+        <activity
+                android:name=".sectionAnimation.KenBurnsEffect"
+                android:label="KenBurnsEffect"/>
     </application>
 </manifest>
