@@ -50,5 +50,13 @@
         <activity
                 android:name=".sectionTipsAndTricks.ToastPostion"
                 android:label="ToastPostion"/>
+        <activity android:name=".sectionPatterns.mvp.view.impl.SplashActivity"
+                android:label="SplashActivity"
+                />
+        <activity
+                android:name=".sectionPatterns.broadcast.BroadcastReceiverActivity"
+                android:label="Activity内监听广播"/>
+
+        <service android:name=".sectionPatterns.broadcast.MyService"/>
     </application>
 </manifest>
