@@ -42,5 +42,10 @@
                 android:label="ScreenOrientation"
                 android:configChanges="orientation"
                 />
+        <activity
+                android:name=".sectionTipsAndTricks.NoBgPhoneWindow"
+                android:label="NoBgPhoneWindow"
+                android:theme="@style/Theme.NoBackground"
+                />
     </application>
 </manifest>
