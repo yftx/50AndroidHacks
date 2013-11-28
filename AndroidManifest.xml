@@ -47,5 +47,8 @@
                 android:label="NoBgPhoneWindow"
                 android:theme="@style/Theme.NoBackground"
                 />
+        <activity
+                android:name=".sectionTipsAndTricks.ToastPostion"
+                android:label="ToastPostion"/>
     </application>
 </manifest>
