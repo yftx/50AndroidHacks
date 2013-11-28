@@ -19,7 +19,7 @@ public class SampleAdapter extends BaseAdapter {
         this.inflater = inflater;
     }
 
-    static final String[] COUNTRIES = new String[]{
+    public static final String[] COUNTRIES = new String[]{
             "Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra",
             "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda",
             "Argentina", "Armenia", "Aruba", "Australia", "Austria",
@@ -102,10 +102,16 @@ public class SampleAdapter extends BaseAdapter {
             viewHolder.header = (TextView) convertView.findViewById(R.id.header);
             viewHolder.lable = (TextView) convertView.findViewById(R.id.label);
             convertView.setTag(viewHolder);
-        }else {
+        } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-        viewHolder.header.setVisibility(View.GONE);
+        String var = getItem(position);
+        if (position == 0 || getItem(position - 1).charAt(0) != var.charAt(0)) {
+            viewHolder.header.setVisibility(View.VISIBLE);
+            viewHolder.header.setText(var.substring(0, 1));
+        } else {
+            viewHolder.header.setVisibility(View.GONE);
+        }
         viewHolder.lable.setText(getItem(position));
         return convertView;
     }
