@@ -37,5 +37,10 @@
         <activity
                 android:name=".sectionTipsAndTricks.GlowTextView"
                 android:label="GlowTextView"/>
+        <activity
+                android:name=".sectionTipsAndTricks.ScreenOrientation"
+                android:label="ScreenOrientation"
+                android:configChanges="orientation"
+                />
     </application>
 </manifest>

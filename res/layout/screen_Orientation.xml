@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            />
+    <View
+            android:id="@+id/port_view_pos"
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:focusable="false"
+            />
+    <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:text="it's only a test"
+            />
+</RelativeLayout>
